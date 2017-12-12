@@ -53,10 +53,10 @@
 		E98849871FDAE7760041E0CC /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				E988498B1FDAE7BB0041E0CC /* CameraScanView.h */,
-				E98849881FDAE7BB0041E0CC /* CameraScanView.m */,
 				E988498A1FDAE7BB0041E0CC /* CameraViewController.h */,
 				E98849891FDAE7BB0041E0CC /* CameraViewController.m */,
+				E988498B1FDAE7BB0041E0CC /* CameraScanView.h */,
+				E98849881FDAE7BB0041E0CC /* CameraScanView.m */,
 				E98849931FDAF0860041E0CC /* UIImage+Category.h */,
 				E98849921FDAF0860041E0CC /* UIImage+Category.m */,
 				E98849901FDAEED40041E0CC /* Bundle.bundle */,

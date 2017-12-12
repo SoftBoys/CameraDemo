@@ -52,8 +52,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ;
-    
     self.view.backgroundColor = [UIColor blackColor];
     
     [self.view addSubview:self.contentView];
@@ -62,6 +60,10 @@
     
 
     self.session = [[AVCaptureSession alloc] init];
+    
+    if ([self.session canSetSessionPreset:AVCaptureSessionPreset1280x720]) {
+        [self.session setSessionPreset:AVCaptureSessionPreset1280x720];
+    }
     
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     self.input = [AVCaptureDeviceInput deviceInputWithDevice:device error:nil];
@@ -93,6 +95,11 @@
     [self addScanView];
     
     
+//    AVCaptureDevice *device = [self.input device];
+//    NSError *error = nil;
+//    if ([device lockForConfiguration:&error]) {
+//        [device setFocusModeLockedWithLensPosition:1 completionHandler:nil];
+//    }
     
 }
 - (void)addScanView {
